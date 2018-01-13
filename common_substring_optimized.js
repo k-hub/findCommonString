@@ -19,6 +19,11 @@ function findLongestSubstring(str1, str2) {
 					maxSubstringIndex = j;
 				} else {
 					tempArr.push(1);
+
+					if (!substringLength) {
+						substringLength = 1;
+						maxSubstringIndex = j;
+					}
 				}
 			} else {
 				tempArr.push(0);
